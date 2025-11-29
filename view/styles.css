@@ -34,3 +34,11 @@
 #bottom-text {
     bottom: 10px;
 }
+
+#generate-btn {
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: comic sans ms, sans-serif;
+    display: block;
+}
