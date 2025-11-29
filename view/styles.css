@@ -1,0 +1,36 @@
+.meme-container {
+    position: relative;
+    display: inline-block;
+}
+
+#meme-image {
+    display: block;
+    max-width: 100%;
+}
+
+#top-text, #bottom-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Impact, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+    margin: 0;
+    padding: 10px;
+}
+
+#top-text {
+    top: 10px;
+}
+
+#bottom-text {
+    bottom: 10px;
+}
