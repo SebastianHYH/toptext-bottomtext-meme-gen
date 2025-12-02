@@ -4,7 +4,12 @@ const topTexts = [
     "SUCCESS KID",
     "Distracted Boyfriend",
     "This is Fine",
-    "Change My Mind"
+    "Change My Mind",
+    "",
+    "WE HAVE MCDONALDS AT HOME",
+    "FORTNITE",
+    "GENSHIN IMPACT",
+    "VALORANT"
 ];
 
 const bottomTexts = [
@@ -13,7 +18,10 @@ const bottomTexts = [
     "I MADE IT",
     "LOOKING AT OTHER GIRLS",
     "HOUSE IS ON FIRE",
-    "NO"
+    "NO",
+    "",
+    "MCDONALDS AT HOME:",
+    "BATTLE ROYALE"
 ];
 
 async function generateMeme() {
@@ -23,6 +31,7 @@ async function generateMeme() {
         if (data.success) {
             const memes = data.data.memes;
             const randomMeme = memes[Math.floor(Math.random() * memes.length)];
+            randomMeme = resizeImage(randomMeme);
             document.getElementById('meme-image').src = randomMeme.url;
         }
     } catch (error) {
@@ -34,4 +43,9 @@ async function generateMeme() {
     
     document.getElementById('top-text').textContent = topText;
     document.getElementById('bottom-text').textContent = bottomText;
+}
+
+function resizeImage(meme) {
+    // Implement resizing logic if needed
+    return meme;
 }
