@@ -31,7 +31,7 @@ async function generateMeme() {
         if (data.success) {
             const memes = data.data.memes;
             const randomMeme = memes[Math.floor(Math.random() * memes.length)];
-            randomMeme = resizeImage(randomMeme);
+            // randomMeme = resizeImage(randomMeme);
             document.getElementById('meme-image').src = randomMeme.url;
         }
     } catch (error) {
